@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skii22.github.io</id>
     <title>桜</title>
-    <updated>2022-05-15T09:12:27.052Z</updated>
+    <updated>2022-05-15T10:36:55.038Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skii22.github.io"/>
     <link rel="self" href="https://skii22.github.io/atom.xml"/>
@@ -10,4 +10,242 @@
     <logo>https://skii22.github.io/images/avatar.png</logo>
     <icon>https://skii22.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 桜</rights>
+    <entry>
+        <title type="html"><![CDATA[Finalshell高级版破解Java代码]]></title>
+        <id>https://skii22.github.io/post/bili-you-hou-jiao-ben/</id>
+        <link href="https://skii22.github.io/post/bili-you-hou-jiao-ben/">
+        </link>
+        <updated>2022-05-15T10:07:48.000Z</updated>
+        <content type="html"><![CDATA[<pre><code class="language-import">import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
+
+
+	public class FinalShell {
+	public static void main(String[] args) throws NoSuchAlgorithmException, IOException {
+		System.out.print(&quot;请输入FinalShell的离线机器码：&quot;);
+		Scanner reader = new Scanner(System.in);
+		String machineCode = reader.nextLine();
+		generateKey(machineCode);
+	}
+
+	public static void generateKey(String hardwareId) throws NoSuchAlgorithmException {
+		String proKey = transform(61305 + hardwareId + 8552);
+		String pfKey = transform(2356 + hardwareId + 13593);
+		System.out.println(&quot;请将此行复制到离线激活中：&quot;+proKey);
+		System.out.println(pfKey);
+	}
+
+	public static String transform(String str) throws NoSuchAlgorithmException {
+
+		String md5 = hashMD5(str);
+
+		return hashMD5(str).substring(8, 24);
+	}
+
+	public static String hashMD5(String str) throws NoSuchAlgorithmException {
+		MessageDigest digest = MessageDigest.getInstance(&quot;MD5&quot;);
+		byte[] hashed = digest.digest(str.getBytes());
+		StringBuilder sb = new StringBuilder();
+		for (byte b : hashed) {
+			int len = b &amp; 0xFF;
+			if (len &lt; 16) {
+				sb.append(&quot;0&quot;);
+			}
+			sb.append(Integer.toHexString(len));
+		}
+		return sb.toString();
+	}
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[锐速安装]]></title>
+        <id>https://skii22.github.io/post/rui-su-an-zhuang/</id>
+        <link href="https://skii22.github.io/post/rui-su-an-zhuang/">
+        </link>
+        <updated>2022-05-15T09:57:47.000Z</updated>
+        <content type="html"><![CDATA[<p>锐速安装</p>
+<p>1.更新内核<br>
+rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force</p>
+<p>2.查看内核是否安装成功<br>
+rpm -qa | grep kernel</p>
+<p>3.如果显示里面有这个内核就对了。</p>
+<figure data-type="image" tabindex="1"><img src="https://skii22.github.io/post-images/1652608732458.png" alt="" loading="lazy"></figure>
+<p>4.重启，查看内核是否更换成功<br>
+reboot<br>
+uname -r</p>
+<p>5.更换完内核后开始安装锐速破解版<br>
+wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh &amp;&amp; bash serverspeeder.sh</p>
+<p>6.查看状态<br>
+service serverSpeeder status</p>
+<p>7.查看实时信息<br>
+service serverSpeeder stats</p>
+<p>8.锐速服务是开机启动的，所以不用进行设置</p>
+<p>9.锐速破解版卸载方法<br>
+chattr -i /serverspeeder/etc/apx* &amp;&amp; /serverspeeder/bin/serverSpeeder.sh uninstall -f</p>
+<p>来自 <a href="https://www.cnblogs.com/007sx/p/9416550.html">https://www.cnblogs.com/007sx/p/9416550.html</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于魔法的搭建]]></title>
+        <id>https://skii22.github.io/post/guan-yu-mo-fa-de-da-jian/</id>
+        <link href="https://skii22.github.io/post/guan-yu-mo-fa-de-da-jian/">
+        </link>
+        <updated>2022-05-15T09:52:02.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>只需要使用一下脚本</strong><br>
+第一个命令行操作，对新手不太友好，不推荐。<br>
+bash &lt;(curl -s -L https://git.io/v2ray.sh)</p>
+<p>来自 <a href="https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC">https://github.com/233boy/v2ray/wiki/V2Ray一键安装脚本</a></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>只需要使用一下脚本</strong><br>
+第一个命令行操作，对新手不太友好，不推荐。<br>
+bash &lt;(curl -s -L https://git.io/v2ray.sh)</p>
+<p>来自 <a href="https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC">https://github.com/233boy/v2ray/wiki/V2Ray一键安装脚本</a></p>
+<!-- more -->
+<p>强烈推荐第二种，网页端口操作，简单无脑！👍<br>
+bash &lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)<br>
+shell脚本执行完，在浏览器上进入 你的ip:54321<br>
+也有可能是65432,端口记不太清楚了</p>
+<p>如果你想减少tcp流量拥堵，降低延迟可以使用google的BBR算法加速，不过听说作用不大。<br>
+bash &lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)</p>
+<!-- more -->
+<p>我现在使用的锐速，请看锐速安装篇。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux如何放行指定端口]]></title>
+        <id>https://skii22.github.io/post/linux-ru-he-fang-xing-zhi-ding-duan-kou/</id>
+        <link href="https://skii22.github.io/post/linux-ru-he-fang-xing-zhi-ding-duan-kou/">
+        </link>
+        <updated>2022-05-15T09:51:21.000Z</updated>
+        <content type="html"><![CDATA[<p>1.查看防火墙状态</p>
+<p>firewall-cmd --state</p>
+<p>running代表防火墙正在运行中,如果防火墙处在关闭状态,则运行下面命令开启防火墙</p>
+<p>systemctl start firewalld.service</p>
+<p>2.查看某个端口是否放行</p>
+<p>firewall-cmd --query-port=端口号/tcp</p>
+<p>3.放行指定端口</p>
+<p>firewall-cmd --zone=public --add-port=8080/tcp --permanent</p>
+<p>3.1.重启防火墙</p>
+<p>systemctl restart firewalld.service</p>
+<p>3.2 重新载入配置</p>
+<p>firewall-cmd --reload</p>
+<p>3.3 关闭防火墙</p>
+<p>systemctl stop firewalld</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[条件查询]]></title>
+        <id>https://skii22.github.io/post/tiao-jian-cha-xun/</id>
+        <link href="https://skii22.github.io/post/tiao-jian-cha-xun/">
+        </link>
+        <updated>2022-05-15T09:50:05.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>参数接收</strong><br>
+SaL语句设置多个参数有几种方式？<br>
+1）散装参数：需要使用@Param（“SQ中的参数占位符名称&quot;）<br>
+2）实体类封装参数<br>
+*只需要保证SQL中的参数名和实体类属性名对应上，即可设置成功I<br>
+3）map集合<br>
+*只需要保证SQL中的参数名和map集合的键的名称对应上，即可设置成功</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>参数接收</strong><br>
+SaL语句设置多个参数有几种方式？<br>
+1）散装参数：需要使用@Param（“SQ中的参数占位符名称&quot;）<br>
+2）实体类封装参数<br>
+*只需要保证SQL中的参数名和实体类属性名对应上，即可设置成功I<br>
+3）map集合<br>
+*只需要保证SQL中的参数名和map集合的键的名称对应上，即可设置成功</p>
+<!-- more -->
+<p>😇1，散装参数<br>
+companyName=&quot;%&quot;+companyName+&quot;%&quot;<br>
+brandName=&quot;%&quot; + brandName+&quot;%&quot;<br>
+需要进行加工数据<br>
+😄2，对象参数<br>
+Brand brand =new Brand();<br>
+brand .setcompanyName(companyName);<br>
+brand.serbrandName(brandName);<br>
+😆3,Map集合<br>
+Map map =new HashMap();<br>
+map.put(&quot;companyName&quot;,companyName)<br>
+map.put(&quot;brandName&quot;,brandName);</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[动态数据查询]]></title>
+        <id>https://skii22.github.io/post/dong-tai-shu-ju-cha-xun/</id>
+        <link href="https://skii22.github.io/post/dong-tai-shu-ju-cha-xun/">
+        </link>
+        <updated>2022-05-15T09:49:37.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>多条件查询</strong><br>
+动态SQL if：用于判断参数是否有值，使用test属性进行条件判断<br>
+*存在的问题：第一个条件不需要逻辑运算符<br>
+*解决方案：<br>
+1）使用恒等式让所有条件格式都一样<br>
+2）<where>标签替换where关键字<br>
+<strong>单条件查询</strong><br>
+<choose>&lt;！--类似于switch--&gt;<br>
+<when>&lt;！--类似于case--&gt;<br>
+<otherwise>&lt;！--类似于default--&gt;<br>
+如果想智能省略where 用<where>标签嵌套就可以了</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[mvn命令行 test package报错]]></title>
+        <id>https://skii22.github.io/post/mvn-ming-ling-xing-test-package-bao-cuo/</id>
+        <link href="https://skii22.github.io/post/mvn-ming-ling-xing-test-package-bao-cuo/">
+        </link>
+        <updated>2022-05-15T09:49:05.000Z</updated>
+        <content type="html"><![CDATA[<p>在pom.xml文件中添加一下内容<br>
+<build><br>
+<plugins><br>
+<plugin><br>
+<groupId>org.apache.maven.plugins</groupId><br>
+<artifactId>maven-surefire-plugin</artifactId><br>
+<version>2.4.2</version><br>
+<configuration><br>
+<skipTests>true</skipTests>   <!--！！！--><br>
+</configuration><br>
+</plugin><br>
+</plugins><br>
+</build></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[google依赖缺失]]></title>
+        <id>https://skii22.github.io/post/google-yi-lai-que-shi/</id>
+        <link href="https://skii22.github.io/post/google-yi-lai-que-shi/">
+        </link>
+        <updated>2022-05-15T09:48:46.000Z</updated>
+        <content type="html"><![CDATA[<p>pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[crypto缺失]]></title>
+        <id>https://skii22.github.io/post/crypto-que-shi/</id>
+        <link href="https://skii22.github.io/post/crypto-que-shi/">
+        </link>
+        <updated>2022-05-15T09:48:29.000Z</updated>
+        <content type="html"><![CDATA[<p>pip install crypto<br>
+再更改 Python 路径	\local-packages\python39\site-packages 下有个文件夹 crypto c改成大写C</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[touch创建新文件和更新文件时间]]></title>
+        <id>https://skii22.github.io/post/touch-chuang-jian-xin-wen-jian-he-geng-xin-wen-jian-shi-jian/</id>
+        <link href="https://skii22.github.io/post/touch-chuang-jian-xin-wen-jian-he-geng-xin-wen-jian-shi-jian/">
+        </link>
+        <updated>2022-05-15T09:48:12.000Z</updated>
+        <content type="html"><![CDATA[<p>-a：或--time=atime或--time=access或--time=use  只更改存取时间；<br>
+-c：或--no-create  不建立任何文件；<br>
+-d：&lt;时间日期&gt; 使用指定的日期时间，而非现在的时间；<br>
+-f：此参数将忽略不予处理，仅负责解决BSD版本touch指令的兼容性问题；<br>
+-m：或--time=mtime或--time=modify  只更该变动时间；<br>
+-r：&lt;参考文件或目录&gt;  把指定文件或目录的日期时间，统统设成和参考文件或目录的日期时间相同；<br>
+-t：&lt;日期时间&gt;  使用指定的日期时间，而非现在的时间；<br>
+--help：在线帮助；<br>
+--version：显示版本信息。</p>
+]]></content>
+    </entry>
 </feed>

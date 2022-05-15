@@ -9,50 +9,19 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-    <link rel="stylesheet" href="/media/css/index.css">
     <link rel="stylesheet" href="/media/live2d/css/live2d.css" />
     
-    <style>
-        #centerbg{
-            background-image: url(https://cdn.seovx.com/?mom=302);
-        }
-        a {
-            color: #B9B9B9;
-        }
-    </style>
 </head>
-<body class=" mdui-loaded">
-<header class="mdui-toolbar mdui-color-theme mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide" style="z-index: 1000">
+<body class=" mdui-appbar-with-toolbar  mdui-theme-primary-pink mdui-theme-accent-pink">
+        <header class="mdui-toolbar mdui-color-pink mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide" style="z-index: 1000">
     <a href="javascript:;" mdui-drawer="{target: '#left-drawer',overlay:true}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
     <span class="mdui-typo-title">桜</span>
     <div class="mdui-toolbar-spacer"></div>
 <!--    <a href="javascript:history.go(0);" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
     <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
 </header>
-<div class="meteor">
-    <div class="red" style="left:600px;"></div>
-    <div class="orange" style="left:700px;"></div>
-    <div class="yellow" style="left:900px;"></div>
-    <div class="green" style="left:1100px;"></div>
-    <div class="cyan" style="left:1260px;"></div>
-    <div class="blue" style="left:1400px;"></div>
-    <div class="purple" style="left:1500px;"></div>
-    <div class="red" style="left:0px;"></div>
-    <div class="orange" style="left:100px;"></div>
-    <div class="yellow" style="left:300px;"></div>
-    <div class="green" style="left:500px;"></div>
-    <div class="cyan" style="left:660px;"></div>
-    <div class="blue" style="left:800px;"></div>
-    <div class="purple" style="left:900px;"></div>
-    <div class="red" style="left:1200px;"></div>
-    <div class="orange" style="left:1300px;"></div>
-    <div class="yellow" style="left:1500px;"></div>
-    <div class="green" style="left:1700px;"></div>
-    <div class="cyan" style="left:1860px;"></div>
-    <div class="blue" style="left:2000px;"></div>
-    <div class="purple" style="left:2100px;"></div>
-</div>
-<div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close" id="left-drawer">
+
+        <div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close" id="left-drawer">
     <ul class="mdui-list">
         <li class="mdui-subheader">菜单</li>
         
@@ -75,239 +44,259 @@
     </ul>
 </div>
 
-<div class="headertop filter-grid" style="height: auto">
-    <figure id="centerbg" class="centerbg" style="">
-        <div class="focusinfo">
-            <div class="header-tou">
-                <a href=">">
-                    <img src="/images/avatar.png">
+        <div class="mdui-container">
+            <div class="mdui-row mdui-row-gapless">
+                <div class="k-container">
+                    <div class="head_card-offset"></div>
+                    
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">File类常用方法</div>
+                    <div class="mdui-card-primary-subtitle"><p>判断获取文件信息<br>
+File f1 =new file(文件路径)；<br>
+#是文件还是文件家判断<br>
+f1.isFile()<br>
+f1.isDirectory()<br>
+#文件绝对路径<br>
+f1.getAbsolutePath()<br>
+#文件定义时使用的路径<br>
+f1.getPath()<br>
+#文件名，带后缀<br>
+f1.getName()<br>
+#文件大小，字节个数<br>
+f1.length()<br>
+#文件最后修改时间，（数据为毫秒数）<br>
+f1.latModified()<br>
+#文件或文件夹是否存在<br>
+f1.exeists()</p>
+</div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/file-lei-chang-yong-fang-fa/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">logback日志</div>
+                    <div class="mdui-card-primary-subtitle"></div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/logback-ri-zhi/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">异常</div>
+                    <div class="mdui-card-primary-subtitle"></div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/yi-chang/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">反射</div>
+                    <div class="mdui-card-primary-subtitle"></div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/fan-she/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">IO流</div>
+                    <div class="mdui-card-primary-subtitle"></div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/io-liu/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">Date相关API</div>
+                    <div class="mdui-card-primary-subtitle"><p>#将毫秒数据转换为标准时间格式<br>
+SimpleDateFormat(&quot;yyyy/MM/dd HH:mm:ss&quot;).format(时间毫秒参数/m)</p>
+<p>创建对象，获取时间毫秒值<br>
+Date date =new Date();<br>
+long time = date.getTime(0;</p>
+</div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/date-xiang-guan-api/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">可变参数</div>
+                    <div class="mdui-card-primary-subtitle"></div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/ke-bian-can-shu/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">set集合实现类特点</div>
+                    <div class="mdui-card-primary-subtitle"><p>Hashset：<strong>无序</strong>、不重复、无索引。<br>
+LinkedHashset：<strong>有序</strong>、不重复、无索引。<br>
+TreeSet：<strong>排序</strong>、不重复、无索引。<br>
+🎓<strong>Set集合的功能上基本上与Collection的API一致。</strong></p>
+<p>哈希表的组成<br>
+·JDK8之前的，底层使用数组+链表组成<br>
+·JDK8开始后，底层采用数组+链表+红黑树组成。</p>
+<p>HashSet原理解析<br>
+①创建一个默认长度16的数组，数组名table<br>
+②根据元素的哈希值跟数组的长度求余计算出应存入的位置（哈希算法）<br>
+③判断当前位置是否为null，如果是null直接存入<br>
+④如果位置不为null，表示有元素，则调用equals方法比较<br>
+⑤如果一样，则不存，如果不一样，则存入数组，<br>
+·JDK7新元素占老元素位置，指向老元素<br>
+·JDK8中新元素挂在老元素下面</p>
+<p>哈希表的详细流程<br>
+①创建一个默认长度16，默认加载因为0.75的数组，数组名table<br>
+②根据元素的<strong>哈希值</strong>跟<strong>数组的长度求余</strong>计算出应存入的位置<br>
+③判断当前位置是否为null，如果是null直接存入，如果位置不为null，表示有元素，则调用equals方法比较属性值，如果一样，则不存，如果不一样，则存入数组。<br>
+<strong>④当数组存满到16*0.75=12时，就自动扩容，每次扩容原先的两倍</strong><br>
+<strong>⑤如果一样，则不存，如果不一样，则存入数组，</strong><br>
+🏅结论：如果希望Set集合认为2个内容一样的对象是重复的，必须重写对象的hashCode（）和equals（）方法<br>
+因为如果不重写，相同的内容可能得到不同的Hash值，要定义相同的内容得到相同的Hash值，同时存储时还要再对比内容是否相同，相同则不插入，不相同向后接入链表</p>
+</div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/set-ji-he-shi-xian-lei-te-dian/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">泛型深入，自定义泛型，泛型通配符，上下限</div>
+                    <div class="mdui-card-primary-subtitle"><p>泛型类<br>
+范例：public class MyArrayList-T&gt;{}<br>
+此处泛型变量T可以随便写为任意标识，常见的如E、T、K、V等。<br>
+泛型方法<br>
+泛型方法的格式：修饰符&lt;泛型变量&gt;方法返回值方法名称（形参列表）{}范例：public <T> void show（Tt）{}</p>
+</div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/fan-xing-shen-ru-zi-ding-yi-fan-xing-fan-xing-tong-pei-fu-shang-xia-xian/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://skii22.github.io/media/img/bai.jpg"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">正规表达式</div>
+                    <div class="mdui-card-primary-subtitle"><p><strong>字符串类型</strong><br>
+[abc]只能是a,b或c<br>
+[^abc]除了abc以外的任何字符<br>
+[a-zA-Z]	a到zA到Z包括范围<br>
+[a-d[m-p]]	a到d，或m通过p:	（[a-dm-p]联合）<br>
+[a-z&amp;&amp;[def]]	d,e或f（交集）<br>
+[a-z&amp;&amp;[^bc]]		a到z,除了b和c		（[ad-z]减法）<br>
+[a-z&amp;&amp;[^m-p]]	a到z，除了m到p：（[a-lq-z]减法）</p>
+</div>
+                </div>
+                <div class="mdui-card-actions" style="float:right;">
+                    <a href="https://skii22.github.io/post/zheng-gui-biao-da-shi/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_card-offset"></div>
+
+
+                </div>
+            </div>
+            <div class="mdui-row mdui-row-gapless">
+                <div class="k-container">
+                    
+    <div class="doc-footer-nav mdui-color-theme">
+        <div class="mdui-container">
+            <div class="mdui-row">
+                
+                    <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
+                
+                
+                <a href="https://skii22.github.io/tag/Java/page/2" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+                    <div class="doc-footer-nav-text">
+                        <i class="mdui-icon material-icons">arrow_forward</i>
+                        <span class="doc-footer-nav-direction">查看</span>
+                        <div class="doc-footer-nav-chapter mdui-hidden-xs-down">下一页</div>
+                    </div>
                 </a>
-            </div>
-            <div class="header-info">
-                <p>逝者如斯夫，不舍昼夜。</p>
-            </div>
-            <div class="top-social">
                 
-                
-                
-                 
-                <li>
-                    <a href="https://www.zhihu.com/people/encounter-16" target="_blank" class="social-bili" title="zhihu">
-                        <div class="www" id="zhihu"></div>
-                    </a>
-                </li>
-                
-                
-                <li>
-                    <a href="https://steamcommunity.com/profiles/76561198803959356/" target="_blank" class="social-wangyiyun" title="Twitter">
-                        <div class="www" id="steam"></div>
-                    </a>
-                </li>
-                
-                
-                <li>
-                    <a href="https://github.com/skII22" target="_blank" class="social-wangyiyun" title="Twitter">
-                        <div class="www" id="github"></div>
-                    </a>
-                </li>
-                
-                
-                <li>
-                    <a href="https://music.163.com/#/user/home?id=380486672" target="_blank" class="social-wangyiyun" title="Twitter">
-                        <div class="www" id="wangyiyun"></div>
-                    </a>
-                </li>
-                
-                
-
-            </div>
-        </div>
-    </figure>
-</div>
-<div class="mdui-container">
-    <div class="mdui-row mdui-row-gapless">
-        <div class="k-container">
-            <div class="head_card-offset"></div>
-            <div class="head_card-offset"></div>
-            
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">Finalshell高级版破解Java代码</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/bili-you-hou-jiao-ben/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
             </div>
         </div>
     </div>
-    <div class="head_card-offset"></div>
 
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">锐速安装</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/rui-su-an-zhuang/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+
                 </div>
             </div>
         </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">关于魔法的搭建</div>
-                    <div class="mdui-card-primary-subtitle"><p><strong>只需要使用一下脚本</strong><br>
-第一个命令行操作，对新手不太友好，不推荐。<br>
-bash &lt;(curl -s -L https://git.io/v2ray.sh)</p>
-<p>来自 <a href="https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC">https://github.com/233boy/v2ray/wiki/V2Ray一键安装脚本</a></p>
-</div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/guan-yu-mo-fa-de-da-jian/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">Linux如何放行指定端口</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/linux-ru-he-fang-xing-zhi-ding-duan-kou/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">条件查询</div>
-                    <div class="mdui-card-primary-subtitle"><p><strong>参数接收</strong><br>
-SaL语句设置多个参数有几种方式？<br>
-1）散装参数：需要使用@Param（“SQ中的参数占位符名称&quot;）<br>
-2）实体类封装参数<br>
-*只需要保证SQL中的参数名和实体类属性名对应上，即可设置成功I<br>
-3）map集合<br>
-*只需要保证SQL中的参数名和map集合的键的名称对应上，即可设置成功</p>
-</div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/tiao-jian-cha-xun/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">动态数据查询</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/dong-tai-shu-ju-cha-xun/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">mvn命令行 test package报错</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/mvn-ming-ling-xing-test-package-bao-cuo/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">google依赖缺失</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/google-yi-lai-que-shi/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">crypto缺失</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/crypto-que-shi/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://skii22.github.io/media/img/bai.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">touch创建新文件和更新文件时间</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://skii22.github.io/post/touch-chuang-jian-xin-wen-jian-he-geng-xin-wen-jian-shi-jian/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-
-        </div>
-    </div>
-    <div class="mdui-row">
-    </div>
-</div>
-<footer class="mdui-container footer ">
+        <footer class="mdui-container footer ">
 <!--    <div class="head_card-offset"></div>-->
     <div class="mdui-row mdui-row-gapless">
         <div class="k-container">
@@ -355,7 +344,6 @@ SaL语句设置多个参数有几种方式？<br>
 <script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
 <script type="text/javascript" src="/media/live2d/js/message.js"></script>
 
-</body>
+    </body>
 <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-<script src="/media/js/index.js"></script>
 </html>
